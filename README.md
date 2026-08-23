@@ -40,3 +40,20 @@ Utilice la planeacion row y col acorde al sistema grid sugerido de la IA para po
 
 ### ¿Qué aprendí?
 Aprendí a llevar de mejor manera el sistema grid y definir si es necesario usar un template completo de bootstrap o sus clases con propiedades y valores predefinidos. 
+
+## Prompt #2 
+
+### ¿Qué necesitába? 
+Conocer una forma de agregar un efecto de viñeta oscuro sobre la imagen de mi background sin afectar el texto
+### Prompt: 
+Actúa como tutor de desarrollo web para principiantes con experiencia en HTML, CSS y UX/UI. Estoy creando un Hero Section para una página de recomendaciones de películas y series de terror. Ya tengo una imagen de fondo, un h1 y un párrafo alineados como quiero. Necesito aplicar con CSS un efecto de viñeta oscuro sobre la imagen sin afectar el texto. Intenté usar opacity, pero quiero saber qué propiedades son más adecuadas y por qué.
+### ¿Qué respondió? 
+Explicó que opacity no era la mejor opción porque afecta a todo el elemento, incluyendo el h1 y el párrafo. En su lugar, se recomendó usar radial-gradient() junto con background-image para colocar una capa oscura sobre la imagen y generar un efecto de viñeta. También se explicó el uso de background-size: cover y background-position: center.  
+### ¿Qué utilice? 
+Utilice el codigo completo de personalizacion de viñeta sobre mi background que con anterioridad ya tenia y habia intentado personalizarlo con las propiedades que conocía
+
+### ¿Qué aprendí?
+comprendí que CSS permite colocar varias capas en background-image, por ejemplo un degradado encima de una imagen.
+
+
+
