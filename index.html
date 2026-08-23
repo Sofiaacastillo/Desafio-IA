@@ -3,19 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Conexion bootstrap -->
+    <title>Mini sitio recomendaciones\</title>
+    <!--!Conexion de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Conexion CSS-->
+    <!--!Conexion de CSS-->
     <link rel="stylesheet" href="styles.css">
+<!--!Nota como recordatorio personal: Se coloca la conexion del CSS posterior a la de bootstrap ya que al tener predefinidos estilos, colocando CSS despues, las reglas modifican o sobreescriben las de bootstrap-->
 </head>
 <body>
+    <!--*Header para ingresar contenido introductorio, navbar y herosection-->
+   <header>
+    <!--*Apartado especifico para el navbar con bootstrap-->
+
+
+    <!--*Cierre de apartado para navbar con bootstrap -->
+    <!--*Seccion especifica para el hero section-->
+    <section id="heroSection"> <!--?Id especifico para la personalizacion solo de esta seccion con determinadas caracteristicas-->
+        <h1>Películas y series que no te dejarán dormir</h1>
+        <p>Descubre recomendaciones de terror</p>
+    </section>
+   </header>
+<!--*Seccion para recomendacion de peliculas-->
+<section class="seccion"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones-->
+    <h2 class="introduccion"></h2>  <!--?Clase determinada para la personalizacion del titulo introductorio a la seccion-->
+  |  <!--*Seccion de tarjetas de recomendacion peliculas-->
+
+<div class="conjuntoTarjetas"> <!--?Se determino una div y una clase para juntar de 2 a 3 cards por fila (aun por definir es uno de los puntos a tocar con IA)-->
+    <!--*Tarjeta de recomendacion #1-->
+    <div class="tarjetas"> <!--? Clase determinada para la personalizacion de las tarjetas-->
+<h3>La noche del demonio</h3>
+<!--*Se abrio div para poder asignar el contenido de informacion tecnica de la pelicula para personalizar diferente-->
+<div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p>Año: 2011</p>
+<p>Donde ver: Plataforma</p>
+<p>Nivel de miedo:⭐⭐⭐⭐⭐ — Mejor no verla solo.</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+<h4>Sinopsis</h4>
+<p>Después de que Dalton cae inexplicablemente en un estado parecido al coma, su familia comienza a experimentar sucesos paranormales cada vez más peligrosos. Pronto descubren que el problema no está realmente en su casa y que Dalton podría estar conectado con un lugar que desconocían por completo</p>
+<h4>¿Por qué verla?</h4>
+<p>Porque el terror no se limita a un fantasma o una casa embrujada: existe todo un mundo habitado por espíritus y demonios, al que algunas personas pueden entrar sin siquiera saber que tienen ese don… y del que no siempre regresan solas.</p>
+    </div>
+<!--*Tarjeta de recomendacion #2-->
+    <div class="tarjetas"> <!--? Clase determinada para la personalizacion de las tarjetas-->
+<h3>Nombre pelicula</h3>
+<!--*Se abrio div para poder asignar el contenido de informacion tecnica de la pelicula para personalizar diferente-->
+<div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p>Año: 0000</p>
+<p>Donde ver: Plataforma</p>
+<p>Nivel de miedo:</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+<h4>Sinopsis</h4>
+<p>Escribir Sinopsis</p>
+<h4>¿Por qué verla?</h4>
+<p>Escribir el porque</p>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+</section> <!--*Termino de seccion recomendaccion de peliculas-->
+
+
+<!--*Seccion para recomendacion de series-->
+<section class="seccion"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones de series-->
+
+
+</section>
+
+
+
+
    
    
-   
-   <!--Conexion javascript de bootstrap-->
+
+
+
+
+<!--*Seccion para colocar recomendaciones acorde al nivel de miedo-->
+<section class="Recomendacion-nivel">
+<h3>Elige tu nivel de terror</h2>
+<!--*Tarjetas acorde a los niveles de miedo para los usuarios, se utilizo bootstrap para -->
+<div>
+
+</div>
+</section>
+
+<!--*Espacio para carrusel de escenas mas terrorificas de las peliculas recomendadas realizado con bootstrap-->
+<div>
+
+</div>
+
+
+<footer> <!--*Pie de pagina, mejor definido como footer-->
+    
+
+</footer>
+
+
+   <!--!Conexion javascript de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!--Conexion javascript local-->
+    <!--!Conexion javascript local-->
     <script src="script.js"></script>
 </body>
 </html>
