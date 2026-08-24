@@ -1,25 +1,31 @@
+/*?Modificacion de body para unificar background en secciones*/
+body{
+    background: linear-gradient(#000000,#2d0101,#000000, #760101e6,#000000)
+}
+
+
 /*?Estilos para header contemplando el navbar y el herosection*/
 
 /*!Edicion Navbar*/
 .mi-navbar{ /**clase colocada para modificar las propiedades y valores del navbar de bootstrap*/
     background-color: black;
     color: #ffffff;
-    height: 60px;
-    padding: 30px;
 }
 
-.mi-navbar .nav-link { /**Acorde a la documentacion de bootstrap y la IA seleccione la clase definida para el listado del menu para poder modificar*/
+.mi-navbar .nav-link { /**Acorde a la documentacion de bootstrap la clase definida es para el listado del menu*/
     color: white;
     font-size: 20px;
+    margin: 5px;
 }
 
-.mi-navbar .navbar-brand { /**Acorde a la documentacion de bootstrap y la IA seleccione la clase definida para el nombre de la pagina para poder modificar*/
+.mi-navbar .navbar-brand { /**Acorde a la documentacion de bootstrap la clase definida para el nombre de la pagina para poder modificar*/
     color: rgb(186, 1, 1);
     font-size: 20px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 50px;
 }
+
 /*!Edicion hero section en header*/
 #heroSection{
    background-image:/**Colocar de fondo una imagen especifica, se utiliza el valor de url para la seleccion de imagen*/
@@ -31,17 +37,17 @@
         ),
         url(/assest/hero-section.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
 
-    background-size: cover;
+    background-size: cover; /**la imagen subre el total de area*/
     background-position: center;
-    height: 500px;   
+    height: 520px;   
 }
 /*!Modificacion de titulo principal de hero section*/
 h1{
-width: 60%; /**Modificacion de ancho para visualizacion de imagen de background*/
-font-size: 70px;
+width: 70%; /**Modificacion de ancho para visualizacion de imagen de background*/
+font-size: 80px;
 color: #D10002;
-padding-top: 70px;
-padding-left: 50px;
+padding-top: 60px;
+margin-left: 70px;
 font-family: Impact, Charcoal, sans-serif;
 }
 /*!Modificacion de parrafo principal de hero section*/
@@ -49,22 +55,98 @@ font-family: Impact, Charcoal, sans-serif;
     width: 60%;
     color: white;
     padding-top: 10px;
-    padding-left: 50px;
+    margin-left: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
-/*!Modificacion de boton de hero section*/
+/*!Modificacion de "boton" de hero section*/
 #botonHero{
-width: 250px;
-height: 40px;
-border-radius: 20px; background-color: #4f0203; color: #ffffff;
+display: block; /**se cambio su comportamiento debido que se utiliza la etiqueta a cuyo valor predefino es inline y no permite ciertas modificaciones*/
+width: 300px; /**ancho de boton*/
+height: 45px; /**alto de boton*/
+border-radius: 20px; background-color: #4f0203; 
+color: #ffffff;
 align-items: center;
-margin: 30px 50px;
+margin: 30px 80px;
 font-weight: bold;
+font-size: 20px;
+text-align: center;
+padding: 10px;
+text-decoration: none;
+}
+    
+/*!Modificacion de contenedor de secciones*/
+.container{
+    border-top: 10px solid; 
+    border-color: #7a0000;
+    margin-top: 30px;
+}
+
+.icono{
+    display: flex;
+    align-items: left;
+    gap: 20px; /**Agregar espacio entre elementos*/
+    margin-top: 15px;
+
+}
+.imagenIcono{
+    width: 80px;
+    height: 80px;
+}
+
+h2{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    color: #fdfdfd;
+    padding-top: 8px;
 }
 
 
+/*!Modificacion de las cards de recomendacion*/
+.cards{
+    margin-top: 20px;
+    height: 370px;
+    border-left: 10px solid #D10002;
+    border-radius: 20px;
+}
 
-body{
-    
+.img-card{
+    height: 370px;
+    width: 280px;
+    border-radius: 2px;
+}
+
+
+.info{ /**Es la tarjeta de informacion de la pelicula o serie**/
+    display: flex;
+    gap: 15px;  /**Agregar espacio entre elementos*/
+    width: 100%;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin: 0px;
+    align-items: center;
+    justify-content: left;
+    color: #fdfdfd;
+    background-color: #4f0203;
+    border-radius: 5px;
+}
+/*!Modificacion de footer*/
+footer{
+   background-image:/**Colocar de fondo una imagen especifica, se utiliza el valor de url para la seleccion de imagen*/
+        radial-gradient(
+            circle,/**Se utiliza radial-gradient junto con background-image para crear un efecto de viñeta: el centro de la imagen permanece más visible y los bordes se oscurecen gradualmente con negro.*/
+            rgba(0, 0, 0, 0.50) 50%, 
+            /**Desde el centro hasta aproximadamente el 50% se aplica negro con 50% de transparencia, por lo que la imagen aún se ve */
+            rgb(0, 0, 0) 100% /**Al llegar a los bordes, el color se vuelve negro completamente,creando el efecto de viñeta*/
+        ),
+        url(/assest/Hero-Terror.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
+
+    background-size: cover; /**la imagen subre el total de area*/
+    background-position: center;
+    height: 300px;   
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 20px;
 }

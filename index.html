@@ -16,23 +16,23 @@
     <!--*Apartado especifico para el navbar con bootstrap-->
 <nav class="navbar navbar-expand-lg mi-navbar"> <!--*Se cambiaron los titulos del navbar-->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Noche de terror</a>
+    <a class="navbar-brand" href="#Inicio">Noche de terror</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active inicio" aria-current="page" href="#Inicio"> Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Peliculas</a>
+          <a class="nav-link" href="#seccionPeliculas">Peliculas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Series</a>
+          <a class="nav-link" href="#seccionSeries">Series</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" href="#">Nivel de terror</a>
+          <a class="nav-link" href="#nivelTerror">Nivel de terror</a>
         </li>
       </ul>
     </div>
@@ -43,54 +43,110 @@
     <section id="heroSection"> <!--?Id especifico para la personalizacion solo de esta seccion con determinadas caracteristicas-->
         <h1>Historias que no te dejarán dormir</h1>
         <p id="parrafoHero">Recomendaciones personales de peliculas y series para pasar un buen susto, clasificados según la dosis de miedo que te atrevas aguantar.</p>
-    <button id="botonHero">Elige tu nivel de terror</button>
-    </section>
+    <a id="botonHero" href="#nivelTerror"> Elige tu nivel de terror </a> 
+  </section>
    </header>
 <!--*Seccion para recomendacion de peliculas-->
-<section class="seccion"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones-->
-    <div class="container"> <!--?Se definio la clase container de bootstrap para el contenido de recomendaciones-->
+<section id="seccionPeliculas" class="secciones container"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones-->
 <!--*Separacion para identificar titulo introductorio de seccion de recomendacion peliculas-->
-    <h2 class="introduccion"></h2>  <!--?Clase determinada para la personalizacion del titulo introductorio a la seccion-->
-<!--*Seccion de tarjetas de recomendacion peliculas-->
-<div class="conjuntoTarjetas"> <!--? Inicio conjunto tareas - Se determino una div y una clase para juntar de 2 a 3 cards por fila (aun por definir es uno de los puntos a tocar con IA - Nota actual se reemplazo por las cards predefinidas de bootstrap)-->
-    <!--*Tarjeta de recomendacion #1-->
-    <div class="tarjetas"> <!--? Clase determinada para la personalizacion de las tarjetas-->
-<h3>La noche del demonio</h3>
-<!--*Se abrio div para poder asignar el contenido de informacion tecnica de la pelicula para personalizar diferente-->
-<div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<div class="icono">
+<img src="/assest/Icono.png" class="imagenIcono" alt="iconoPunto">    
+<h2>Peliculas para un maratón de sustos</h2>  
+<!--*Inicio de card de bootstrap "horizontal"-->
+</div>
+<!--*Inicio de sistema grid de la card con imagen-->
+<div class=>
+    <div class="row g-4">
+        <div class="col-12 col-md-6">
+<div class="card mb-3 cards"  style="max-width: 540px;">
+  <div class="row g-0"> <!--*Sistema grid se coloca row para decirle que vamos a colocar en fila elementos en columna-->
+    <div class="col-md-5"> <!--*Apertura de sistema grid del apartado de imagen-->
+      <img src="/assest/peliculashutter.png" class="img-fluid rounded-start img-card" alt="Pelicula de Shutter">
+    </div> <!--*cierre de sistema grid del apartado de imagen-->
+    <div class="col-md-7"> <!--*Apertura de sistema grid del apartado de texto-->
+      <div class="card-body"> <!--*Apertura de div para el cuerpo de tarjeta-->
+        <h5 class="card-title">Shutter: Están entre nosotros</h5>
+        <div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p><strong>Año:</strong> 2004</p>
+<p><strong>Plataforma:</strong> Netflix</p>
+<p><strong>Nivel de miedo:</strong>⭐⭐⭐⭐⭐ Mejor no verla solo.</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+        <p class="card-text sinopsis-tittle"><strong>Sinopsis</strong></p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div> <!--*Cierre de div para el cuerpo de tarjeta-->
+    </div> <!--*Cierre de sistema grid del apartado de texto-->
+  </div> <!--*Cierre de div de row-->
+</div> <!--*Cierre de div de sistema grid de la card con imagen-->
+</div>
+<!--*segunda tarjeta-->
+<div class="col-12 col-md-6">
+<div class="card mb-3 cards"  style="max-width: 540px;">
+  <div class="row g-0"> <!--*Sistema grid se coloca row para decirle que vamos a colocar en fila elementos en columna-->
+    <div class="col-md-5"> <!--*Apertura de sistema grid del apartado de imagen-->
+      <img src="/assest/peliculashutter.png" class="img-fluid rounded-start img-card" alt="Pelicula de Shutter">
+    </div> <!--*cierre de sistema grid del apartado de imagen-->
+    <div class="col-md-7"> <!--*Apertura de sistema grid del apartado de texto-->
+      <div class="card-body"> <!--*Apertura de div para el cuerpo de tarjeta-->
+        <h5 class="card-title">Shutter: Están entre nosotros</h5>
+        <div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p><strong>Año:</strong> 2004</p>
+<p><strong>Plataforma:</strong> Netflix</p>
+<p><strong>Nivel de miedo:</strong>⭐⭐⭐⭐⭐ Mejor no verla solo.</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+        <p class="card-text sinopsis-tittle"><strong>Sinopsis</strong></p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div> <!--*Cierre de div para el cuerpo de tarjeta-->
+    </div> <!--*Cierre de sistema grid del apartado de texto-->
+  </div> <!--*Cierre de div de row-->
+</div> <!--*Cierre de div de sistema grid de la card con imagen-->
+</div>
+<!--*Segunda fila de recomendaciones con 2 cards-->
+
+
+
+</section> <!--*Termino de seccion recomendaccion de peliculas -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Seccion de tarjetas de recomendacion peliculas-->
+<!-- <div class="conjuntoTarjetas"> <!--? Inicio conjunto tareas - Se determino una div y una clase para juntar de 2 a 3 cards por fila (aun por definir es uno de los puntos a tocar con IA - Nota actual se reemplazo por las cards predefinidas de bootstrap)-->
+
+    <!--*Tarjeta de recomendacion #1 -->
+    <!-- <div class="tarjetas"> <Clase determinada para la personalizacion de las tarjetas
+    <h3>La noche del demonio</h3>
+    <!--*Se abrio div para poder asignar el contenido de informacion tecnica de la pelicula para personalizar diferente
+<div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas
 <p>Año: 2011</p>
 <p>Donde ver: Plataforma</p>
 <p>Nivel de miedo:⭐⭐⭐⭐⭐ — Mejor no verla solo.</p>
 </div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
-<h4>Sinopsis</h4>
+<!-- <h4>Sinopsis</h4>
 <p>Después de que Dalton cae inexplicablemente en un estado parecido al coma, su familia comienza a experimentar sucesos paranormales cada vez más peligrosos. Pronto descubren que el problema no está realmente en su casa y que Dalton podría estar conectado con un lugar que desconocían por completo</p>
 <h4>¿Por qué verla?</h4>
 <p>Porque el terror no se limita a un fantasma o una casa embrujada: existe todo un mundo habitado por espíritus y demonios, al que algunas personas pueden entrar sin siquiera saber que tienen ese don… y del que no siempre regresan solas.</p>
-    </div>
-<!--*Tarjeta de recomendacion #2-->
-    <div class="tarjetas"> <!--? Clase determinada para la personalizacion de las tarjetas-->
-<h3>Nombre pelicula</h3>
-<!--*Se abrio div para poder asignar el contenido de informacion tecnica de la pelicula para personalizar diferente-->
-<div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
-<p>Año: 0000</p>
-<p>Donde ver: Plataforma</p>
-<p>Nivel de miedo:</p>
-</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
-<h4>Sinopsis</h4>
-<p>Escribir Sinopsis</p>
-<h4>¿Por qué verla?</h4>
-<p>Escribir el porque</p>
-    </div>
-</div> <!--*Cierre de div con clase conjuntoTarjetas-->
+    </div> -->
 
-</section> <!--*Termino de seccion recomendaccion de peliculas-->
+
 
 
 
 
 <!--*Seccion para recomendacion de series-->
-<section class="seccion"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones de series-->
-
+<section id="seccionSeries" class="secciones container"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones de series-->
+<!--*Separacion para identificar titulo introductorio de seccion de recomendacion peliculas-->
+<div class="icono">
+<img src="/assest/Icono.png" class="imagenIcono" alt="iconoPunto">    
+<h2>Series para maratonear con la luz encendida</h2>  
+</div>
 
 </section>
 
@@ -104,12 +160,18 @@
 
 
 <!--*Seccion para colocar recomendaciones acorde al nivel de miedo-->
-<section class="Recomendacion-nivel">
-    <div>
-<h3>Elige tu nivel de terror</h2>
+<div class="container"> <!--?Se definio la clase container de bootstrap para el contenido de recomendaciones-->
+<section id="nivelTerror" class="Recomendacion-nivel">
+<div class="icono">
+<img src="/assest/Icono.png" class="imagenIcono" alt="iconoPunto">    
+<h2>Elige tu nivel de terror</h2>  
+</div>
 <!--*Tarjetas acorde a los niveles de miedo para los usuarios, se utilizo el sistema grid de bootstrap con respecto a col y row como cumplimiento del requerimiento -->
 
 </section>
+</div> <!--*Cierre de div container-->
+
+
 
 
 
@@ -124,9 +186,21 @@
 
 <!--!PENDIENTE-->
 <!--*Espacio para carrusel de escenas mas terrorificas de las peliculas recomendadas realizado con bootstrap-->
-<div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
