@@ -176,12 +176,36 @@ padding-top: 5px;
 text-decoration: none;
 }
 
+/*!Modificacion de seccion nivel de terror*/
+.nivel-miedo {
+    padding: 30px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+.nivel-miedo h2 {
+    margin-bottom: 15px;
+}
+
+.nivel {
+    padding: 15px;
+    background-color: #4f0203;
+    color: white;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.nivel p {
+    margin: 8px 0;
+}
+
+
 /*!Modificacion de footer*/
 footer{
    background-image:/**Colocar de fondo una imagen especifica, se utiliza el valor de url para la seleccion de imagen*/
         radial-gradient(
             circle,/**Se utiliza radial-gradient junto con background-image para crear un efecto de viñeta: el centro de la imagen permanece más visible y los bordes se oscurecen gradualmente con negro.*/
-            rgba(0, 0, 0, 0.50) 50%, 
+            rgba(0, 0, 0, 0.50) 60%, 
             /**Desde el centro hasta aproximadamente el 50% se aplica negro con 50% de transparencia, por lo que la imagen aún se ve */
             rgb(0, 0, 0) 100% /**Al llegar a los bordes, el color se vuelve negro completamente,creando el efecto de viñeta*/
         ),
@@ -190,5 +214,30 @@ footer{
     background-size: cover; /**la imagen subre el total de area*/
     background-position: center;
     height: 300px;   
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.tittleFooter{
+    color: white;
+    padding-top: 10px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.textFooter{
+    color: white;
+    margin: 10px 0;
+}
+
+.linkFooter{
+    color: rgb(255, 5, 5);
+    margin: 0 10px;
+    text-decoration: none;
 }
 

@@ -54,9 +54,8 @@
 <h2>Peliculas para un maratón de sustos</h2>  
 <!--*Inicio de card de bootstrap "horizontal"-->
 </div>
-
 <!--*Inicio de cards con imagen con sistema grid-->
-<div class=>
+<div>
     <div class="row g-4">
         <div class="col-12 col-md-6">
 <div class="card mb-3 cards"  style="max-width: 540px;">
@@ -161,27 +160,11 @@
   </div> <!--*Cierre de div de row-->
 </div> <!--*Cierre de div de sistema grid de la card con imagen-->
 </div>
-
-
-
-
-
 </section> <!--*Termino de seccion recomendaccion de peliculas -->
 
-
-
-
-
-
-
-
-
-
-
-
+<!--Dejo como comentario y antecedente esta seccion que inicialmente estructure para la creacion de las cards-->
 <!-- Seccion de tarjetas de recomendacion peliculas-->
 <!-- <div class="conjuntoTarjetas"> <!--? Inicio conjunto tareas - Se determino una div y una clase para juntar de 2 a 3 cards por fila (aun por definir es uno de los puntos a tocar con IA - Nota actual se reemplazo por las cards predefinidas de bootstrap)-->
-
     <!--*Tarjeta de recomendacion #1 -->
     <!-- <div class="tarjetas"> <Clase determinada para la personalizacion de las tarjetas
     <h3>La noche del demonio</h3>
@@ -196,31 +179,67 @@
 <h4>¿Por qué verla?</h4>
 <p>Porque el terror no se limita a un fantasma o una casa embrujada: existe todo un mundo habitado por espíritus y demonios, al que algunas personas pueden entrar sin siquiera saber que tienen ese don… y del que no siempre regresan solas.</p>
     </div> -->
-
-
-
-
-
-
 <!--*Seccion para recomendacion de series-->
 <section id="seccionSeries" class="secciones container"> <!--?Clase determinada para la personalizacion de los apartados de seccion de recomendaciones de series-->
-<!--*Separacion para identificar titulo introductorio de seccion de recomendacion peliculas-->
+<!--*Separacion para identificar titulo introductorio de seccion de recomendacion series-->
 <div class="icono">
 <img src="/assest/Icono.png" class="imagenIcono" alt="iconoPunto">    
 <h2>Series para maratonear con la luz encendida</h2>  
 </div>
-
+<!--*Inicio de cards con imagen con sistema grid-->
+<div>
+    <div class="row g-4">
+        <div class="col-12 col-md-6">
+<div class="card mb-3 cards"  style="max-width: 540px;">
+  <div class="row g-0"> <!--*Sistema grid se coloca row para decirle que vamos a colocar en fila elementos en columna-->
+    <div class="col-md-5"> <!--*Apertura de sistema grid del apartado de imagen-->
+      <img src="/assest/La maldicion de hill house.png" class="img-fluid rounded-start img-card" alt="Serie hill house">
+    </div> <!--*cierre de sistema grid del apartado de imagen-->
+    <div class="col-md-7"> <!--*Apertura de sistema grid del apartado de texto-->
+      <div class="card-body"> <!--*Apertura de div para el cuerpo de tarjeta-->
+<!--*Recomendacion 1 con tarjeta bootstrap-->
+        <h5 class="card-title">La maldición de Hill House</h5>
+        <div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p><strong>Año:</strong> 2018</p>
+<p><strong>Plataforma:</strong> Netflix</p>
+<p><strong>Nivel de miedo:</strong>⭐⭐⭐⭐⭐ Mejor no verla solo.</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+        <p class="card-text sinopsis-tittle"><strong>Sinopsis</strong></p>
+        <p class="sinopsis-description">La familia Crain se muda a Hill House con la intención de remodelarla y venderla, pero terminan abandonándola después de acontecimientos aterradores. Años después, los hijos ya adultos continúan cargando con lo que vivieron allí y deberán enfrentarse nuevamente a los recuerdos y presencias que nunca terminaron de dejarlos.</p>
+        <p class=porque-tittle><strong>¿Por qué verla?</strong></p>
+        <p class=porque-description>Porque en Hill House no siempre necesitas esperar a que aparezca un fantasma: puede llevar varios minutos parado detrás de los personajes sin que te hayas dado cuenta.</p>
+        <a class="botonPelicula" href="https://www.netflix.com/mx/title/80189221">Quiero verla</a> 
+      </div> <!--*Cierre de div para el cuerpo de tarjeta-->
+    </div> <!--*Cierre de sistema grid del apartado de texto-->
+  </div> <!--*Cierre de div de row-->
+</div> <!--*Cierre de div de sistema grid de la card con imagen-->
+</div>
+<!--*segunda recomendacion con tarjeta-->
+<div class="col-12 col-md-6">
+<div class="card mb-3 cards"  style="max-width: 540px;">
+  <div class="row g-0"> <!--*Sistema grid se coloca row para decirle que vamos a colocar en fila elementos en columna-->
+    <div class="col-md-5"> <!--*Apertura de sistema grid del apartado de imagen-->
+      <img src="/assest/martes de terror extremo.png" class="img-fluid rounded-start img-card" alt="Serie Martes de terror extremo">
+    </div> <!--*cierre de sistema grid del apartado de imagen-->
+    <div class="col-md-7"> <!--*Apertura de sistema grid del apartado de texto-->
+      <div class="card-body"> <!--*Apertura de div para el cuerpo de tarjeta-->
+        <h5 class="card-title">Martes de terror extremo</h5>
+        <div class="info"> <!--?Se determino la class "info" para poder definir propiedades especificas-->
+<p><strong>Año:</strong> 2024</p>
+<p><strong>Plataforma:</strong> Netflix</p>
+<p><strong>Nivel de miedo:</strong>⭐⭐⭐⭐ Bastante aterradora.</p>
+</div> <!--*Cierre de div de informacion sobre pelicula, esta caja se personalizo para mostrar la informacion de la pelicula de menor tamaño-->
+        <p class="card-text sinopsis-tittle"><strong>Sinopsis</strong></p>
+        <p class="sinopsis-description">Una antología de terror tailandesa formada por 8 historias independientes, cada una inspirada en relatos compartidos por oyentes de un popular programa de radio de terror. </p>
+        <p class=porque-tittle><strong>¿Por qué verla?</strong></p>
+        <p class=porque-description>Porque cada capítulo empieza de cero y nunca sabes qué clase de pesadilla te va a tocar esta vez. Un objeto aparentemente normal, una persona que regresa después de desaparecer o una simple historia escuchada en la radio pueden terminar convirtiéndose en algo completamente perturbador.</p>
+        <a class="botonPelicula" href="https://www.primevideo.com/-/es/detail/0JGH6G03OD9MLOE18O2F6WFZ1J">Quiero verla</a> 
+      </div> <!--*Cierre de div para el cuerpo de tarjeta-->
+    </div> <!--*Cierre de sistema grid del apartado de texto-->
+  </div> <!--*Cierre de div de row-->
+</div> <!--*Cierre de div de sistema grid de la card con imagen-->
+</div>
 </section>
-
-
-
-
-   
-   
-
-
-
-
 <!--*Seccion para colocar recomendaciones acorde al nivel de miedo-->
 <div class="container"> <!--?Se definio la clase container de bootstrap para el contenido de recomendaciones-->
 <section id="nivelTerror" class="Recomendacion-nivel">
@@ -229,7 +248,103 @@
 <h2>Elige tu nivel de terror</h2>  
 </div>
 <!--*Tarjetas acorde a los niveles de miedo para los usuarios, se utilizo el sistema grid de bootstrap con respecto a col y row como cumplimiento del requerimiento -->
+<section class="nivel-miedo">
+    <h2>Nivel de miedo</h2>
+    <p>
+        Esta escala representa qué tan aterradora considero cada recomendación.
+        Úsala para saber qué tan valiente necesitas sentirte antes de darle play.
+    </p>
+    <div class="row g-3">
+        <!--*⭐ NIVEL 1 -->
+        <div class="col-12 col-md">
+            <div class="nivel">
+                <p>⭐</p>
+                <p><strong>Muy ligero</strong></p>
+                <p>
+                    Ideal si apenas estás entrando al género de terror.
+                </p>
+                <p><strong>Por ahora:</strong> Ninguna</p>
+            </div>
+        </div>
+        <!--*⭐⭐ NIVEL 2 -->
+        <div class="col-12 col-md">
+            <div class="nivel">
+                <p>⭐⭐</p>
+                <p><strong>Inquietante</strong></p>
+                <p>
+                    Puede ponerte nervioso, pero sin llegar a ser demasiado intenso.
+                </p>
+                <p><strong>Por ahora:</strong> Ninguna</p>
+            </div>
+        </div>
+        <!--*⭐⭐⭐ NIVEL 3 -->
+        <div class="col-12 col-md">
+            <div class="nivel">
 
+                <p>⭐⭐⭐</p>
+                <p><strong>Miedo moderado</strong></p>
+
+                <p>
+                    Tiene momentos de tensión y terror, pero todavía puedes dormir tranquilo.
+                </p>
+
+                <p>
+                    <strong>Ejemplo:</strong><br>
+                    El Conjuro 3
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- ⭐⭐⭐⭐ NIVEL 4 -->
+        <div class="col-12 col-md">
+            <div class="nivel">
+
+                <p>⭐⭐⭐⭐</p>
+                <p><strong>Bastante aterradora</strong></p>
+
+                <p>
+                    Aquí ya encontrarás escenas y momentos que probablemente sí recuerdes al apagar la luz.
+                </p>
+
+                <p>
+                    <strong>Ejemplos:</strong><br>
+                    Insidious: Chapter 2<br>
+                    Insidious: Chapter 3<br>
+                    Insidious: The Last Key<br>
+                    El Conjuro 4: Últimos ritos<br>
+                    IT (1990)
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- ⭐⭐⭐⭐⭐ NIVEL 5 -->
+        <div class="col-12 col-md">
+            <div class="nivel">
+
+                <p>⭐⭐⭐⭐⭐</p>
+                <p><strong>Mejor no verla solo</strong></p>
+
+                <p>
+                    Para cuando realmente quieres pasar miedo.
+                </p>
+
+                <p>
+                    <strong>Ejemplos:</strong><br>
+                    Insidious<br>
+                    Shutter (2004)<br>
+                    El Conjuro<br>
+                    El Conjuro 2
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 </section>
 </div> <!--*Cierre de div container-->
 
@@ -271,9 +386,21 @@
 
 <!--!PENDIENTE-->
 <footer> <!--*Pie de pagina, mejor definido como footer-->
-    
+    <p class="tittleFooter">Noche de terror</p>
 
-</footer>
+    <nav>
+        <a class="linkFooter" href="#seccionPeliculas">Películas</a>
+        <a class="linkFooter" href="#seccionSeries">Series</a>
+    </nav>
+
+    <p class="textFooter">
+        © 2026 Noche de terror. Todos los derechos reservados.
+    </p>
+
+    <p class="textFooter">
+        Proyecto realizado con fines educativos.
+    </p>
+</footer> <!--*Cierre de footer-->
 
 
 
