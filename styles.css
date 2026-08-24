@@ -35,7 +35,7 @@ body{
             /**Desde el centro hasta aproximadamente el 50% se aplica negro con 50% de transparencia, por lo que la imagen aún se ve */
             rgb(0, 0, 0) 100% /**Al llegar a los bordes, el color se vuelve negro completamente,creando el efecto de viñeta*/
         ),
-        url(/assest/hero-section.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
+        url(assest/hero-section.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
 
     background-size: cover; /**la imagen subre el total de area*/
     background-position: center;
@@ -209,7 +209,7 @@ footer{
             /**Desde el centro hasta aproximadamente el 50% se aplica negro con 50% de transparencia, por lo que la imagen aún se ve */
             rgb(0, 0, 0) 100% /**Al llegar a los bordes, el color se vuelve negro completamente,creando el efecto de viñeta*/
         ),
-        url(/assest/Hero-Terror.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
+        url(assest/Hero-Terror3.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
 
     background-size: cover; /**la imagen subre el total de area*/
     background-position: center;
