@@ -1,0 +1,70 @@
+/*?Estilos para header contemplando el navbar y el herosection*/
+
+/*!Edicion Navbar*/
+.mi-navbar{ /**clase colocada para modificar las propiedades y valores del navbar de bootstrap*/
+    background-color: black;
+    color: #ffffff;
+    height: 60px;
+    padding: 30px;
+}
+
+.mi-navbar .nav-link { /**Acorde a la documentacion de bootstrap y la IA seleccione la clase definida para el listado del menu para poder modificar*/
+    color: white;
+    font-size: 20px;
+}
+
+.mi-navbar .navbar-brand { /**Acorde a la documentacion de bootstrap y la IA seleccione la clase definida para el nombre de la pagina para poder modificar*/
+    color: rgb(186, 1, 1);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50px;
+}
+/*!Edicion hero section en header*/
+#heroSection{
+   background-image:/**Colocar de fondo una imagen especifica, se utiliza el valor de url para la seleccion de imagen*/
+        radial-gradient(
+            circle,/**Se utiliza radial-gradient junto con background-image para crear un efecto de viñeta: el centro de la imagen permanece más visible y los bordes se oscurecen gradualmente con negro.*/
+            rgba(0, 0, 0, 0.50) 50%, 
+            /**Desde el centro hasta aproximadamente el 50% se aplica negro con 50% de transparencia, por lo que la imagen aún se ve */
+            rgb(0, 0, 0) 100% /**Al llegar a los bordes, el color se vuelve negro completamente,creando el efecto de viñeta*/
+        ),
+        url(/assest/hero-section.png); /**direccion de la imagen que se utilizara para fondos, se coloca la imagen del hero debajo del degradado*/
+
+    background-size: cover;
+    background-position: center;
+    height: 500px;   
+}
+/*!Modificacion de titulo principal de hero section*/
+h1{
+width: 60%; /**Modificacion de ancho para visualizacion de imagen de background*/
+font-size: 70px;
+color: #D10002;
+padding-top: 70px;
+padding-left: 50px;
+font-family: Impact, Charcoal, sans-serif;
+}
+/*!Modificacion de parrafo principal de hero section*/
+#parrafoHero{
+    width: 60%;
+    color: white;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+/*!Modificacion de boton de hero section*/
+#botonHero{
+width: 250px;
+height: 40px;
+border-radius: 20px; background-color: #4f0203; color: #ffffff;
+align-items: center;
+margin: 30px 50px;
+font-weight: bold;
+}
+
+
+
+body{
+    
+}
